@@ -1,34 +1,81 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import Scene from '../components/Scene.astro'
+
+interface SceneInterface {
+  title: string
+  text: string
+  bgClass: string
+  textClass: string
+}
+
+const scenes: SceneInterface[] = [
+  {
+    title: 'Per molts anys, Anna! 🎂',
+    text: '32 anys ja... com passa el temps!',
+    bgClass: 'bg-pink-50',
+    textClass: 'text-slate-800',
+  },
+  {
+    title: 'Aquest any he pensat fer-te treballar una mica... 😈',
+    text: 'Així que hauràs de lliscar cap avall per trobar el teu regal. 👇',
+    bgClass: 'bg-rose-900',
+    textClass: 'text-white',
+  },
+  {
+    title: 'Vinga, som-hi...',
+    text: 'Llisca, llisca...',
+    bgClass: 'bg-pink-50',
+    textClass: 'text-slate-800',
+  },
+  {
+    title: 'Encara no...',
+    text: "Que als 32 anys ja cal fer una mica d'exercici de dits! 😅",
+    bgClass: 'bg-pink-100',
+    textClass: 'text-slate-800',
+  },
+  {
+    title: 'Recordes els teus 30?',
+    text: "L'estrès de les Opos, el sopar a l'Umai... quantes coses hem viscut!",
+    bgClass: 'bg-rose-800',
+    textClass: 'text-white',
+  },
+  {
+    title: 'Doncs per aquests 32...',
+    text: 'He preparat una cosa diferent. ❤️',
+    bgClass: 'bg-pink-50',
+    textClass: 'text-slate-800',
+  },
+  {
+    title: 'Molt a prop...',
+    text: 'Només una mica més de scroll...',
+    bgClass: 'bg-rose-900',
+    textClass: 'text-white',
+  },
+  {
+    title: 'Ara sí!',
+    text: 'Aquí tens la teva sorpresa...',
+    bgClass: 'bg-pink-100',
+    textClass: 'text-slate-800',
+  },
+  {
+    title: '🎟️ VAL PER...',
+    text: "[AQUÍ POSAREM EL TEU REGAL REAL: Una escapada a la muntanya / Un dia d'Spa / Unes entrades per un concert...]",
+    bgClass: 'bg-yellow-200',
+    textClass: 'text-slate-900',
+  },
+]
 ---
 
-<Layout title="Happy 32nd, Anna">
-  <Scene
-    title="Happy 32nd, Anna 🎉"
-    text="Swipe down..."
-    bgClass="bg-pink-50"
-    textClass="text-slate-800"
-  />
-
-  <Scene
-    title="Keep going..."
-    text="You thought this was going to be short?"
-    bgClass="bg-rose-900"
-    textClass="text-white"
-  />
-
-  <Scene
-    title="A bit more..."
-    text="Just warming up those fingers."
-    bgClass="bg-pink-50"
-    textClass="text-slate-800"
-  />
-
-  <Scene
-    title="Almost there..."
-    text="Or maybe not."
-    bgClass="bg-rose-900"
-    textClass="text-white"
-  />
+<Layout title="Per molts anys Anna!!">
+  {
+    scenes.map((scene) => (
+      <Scene
+        title={scene.title}
+        text={scene.text}
+        bgClass={scene.bgClass}
+        textClass={scene.textClass}
+      />
+    ))
+  }
 </Layout>
