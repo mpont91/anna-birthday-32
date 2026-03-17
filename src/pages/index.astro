@@ -1,17 +1,77 @@
 ---
-
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy 32nd, Anna</title>
+</head>
+<body>
+<section class="full-screen soft-bg">
+    <h1>Happy 32nd, Anna 🎉</h1>
+    <p>Swipe down to see your surprise...</p>
+</section>
+
+<section class="full-screen dark-bg">
+    <div class="memory-card animate-on-scroll">
+        <h2>An amazing year</h2>
+        <p>Your first special photo or text will go here.</p>
+    </div>
+</section>
+
+<section class="full-screen soft-bg">
+    <div class="memory-card animate-on-scroll">
+        <h2>And many more to come...</h2>
+        <p>Another photo or beautiful message.</p>
+    </div>
+</section>
+</body>
 </html>
+
+<style>
+    body {
+        margin: 0;
+        font-family: system-ui, sans-serif;
+    }
+
+    .full-screen {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .soft-bg { background-color: #fdf2f8; color: #333; }
+    .dark-bg { background-color: #831843; color: #fff; }
+
+    .animate-on-scroll {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+</style>
+
+<script>
+ import { gsap } from "gsap";
+ import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+ gsap.registerPlugin(ScrollTrigger);
+
+ const elementsToAnimate = document.querySelectorAll(".animate-on-scroll");
+
+ elementsToAnimate.forEach((element) => {
+  gsap.to(element, {
+   opacity: 1,
+   y: 0,
+   duration: 1.2,
+   ease: "power2.out",
+   scrollTrigger: {
+    trigger: element,
+    start: "top 80%",
+   }
+  });
+ });
+</script>
