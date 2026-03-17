@@ -1,77 +1,34 @@
 ---
+import Layout from '../layouts/Layout.astro'
+import Scene from '../components/Scene.astro'
 ---
 
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Happy 32nd, Anna</title>
-</head>
-<body>
-<section class="full-screen soft-bg">
-    <h1>Happy 32nd, Anna 🎉</h1>
-    <p>Swipe down to see your surprise...</p>
-</section>
+<Layout title="Happy 32nd, Anna">
+  <Scene
+    title="Happy 32nd, Anna 🎉"
+    text="Swipe down..."
+    bgClass="bg-pink-50"
+    textClass="text-slate-800"
+  />
 
-<section class="full-screen dark-bg">
-    <div class="memory-card animate-on-scroll">
-        <h2>An amazing year</h2>
-        <p>Your first special photo or text will go here.</p>
-    </div>
-</section>
+  <Scene
+    title="Keep going..."
+    text="You thought this was going to be short?"
+    bgClass="bg-rose-900"
+    textClass="text-white"
+  />
 
-<section class="full-screen soft-bg">
-    <div class="memory-card animate-on-scroll">
-        <h2>And many more to come...</h2>
-        <p>Another photo or beautiful message.</p>
-    </div>
-</section>
-</body>
-</html>
+  <Scene
+    title="A bit more..."
+    text="Just warming up those fingers."
+    bgClass="bg-pink-50"
+    textClass="text-slate-800"
+  />
 
-<style>
-    body {
-        margin: 0;
-        font-family: system-ui, sans-serif;
-    }
-
-    .full-screen {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 2rem;
-    }
-
-    .soft-bg { background-color: #fdf2f8; color: #333; }
-    .dark-bg { background-color: #831843; color: #fff; }
-
-    .animate-on-scroll {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-</style>
-
-<script>
- import { gsap } from "gsap";
- import { ScrollTrigger } from "gsap/ScrollTrigger";
-
- gsap.registerPlugin(ScrollTrigger);
-
- const elementsToAnimate = document.querySelectorAll(".animate-on-scroll");
-
- elementsToAnimate.forEach((element) => {
-  gsap.to(element, {
-   opacity: 1,
-   y: 0,
-   duration: 1.2,
-   ease: "power2.out",
-   scrollTrigger: {
-    trigger: element,
-    start: "top 80%",
-   }
-  });
- });
-</script>
+  <Scene
+    title="Almost there..."
+    text="Or maybe not."
+    bgClass="bg-rose-900"
+    textClass="text-white"
+  />
+</Layout>

@@ -1,0 +1,12 @@
+---
+const { title, text, bgClass, textClass } = Astro.props
+---
+
+<section
+  class={`h-screen flex flex-col justify-center items-center text-center p-8 ${bgClass} ${textClass}`}
+>
+  <div class="opacity-0 translate-y-12 animate-on-scroll">
+    <h2 class="text-3xl md:text-5xl font-bold mb-4">{title}</h2>
+    <p class="text-xl md:text-2xl">{text}</p>
+  </div>
+</section>
