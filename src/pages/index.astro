@@ -1,12 +1,21 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import Scene from '../components/Scene.astro'
+import type { ImageMetadata } from 'astro'
+
+import menorca1 from '../assets/menorca1.jpg'
+import menorca2 from '../assets/menorca2.jpg'
+import menorca3 from '../assets/menorca3.jpg'
+import menorca4 from '../assets/menorca4.jpg'
+import umai from '../assets/umai.jpg'
+import catalina from '../assets/catalina.jpg'
 
 interface SceneInterface {
   title: string
-  text: string
+  text?: string
   bgClass: string
   textClass: string
+  images?: ImageMetadata[]
 }
 
 const scenes: SceneInterface[] = [
@@ -17,52 +26,55 @@ const scenes: SceneInterface[] = [
     textClass: 'text-slate-800',
   },
   {
-    title: 'Aquest any he pensat fer-te treballar una mica... 😈',
-    text: 'Així que hauràs de lliscar cap avall per trobar el teu regal. 👇',
+    title: "Encara me'n recordo del primer viatge que vam fer a Menorca...",
     bgClass: 'bg-rose-900',
     textClass: 'text-white',
+    images: [menorca1, menorca2, menorca3, menorca4],
   },
   {
-    title: 'Vinga, som-hi...',
-    text: 'Llisca, llisca...',
+    title: "Ja fa han passat 10 anys d'aquell viatge!",
+    text: '😲 😲 😲 😲',
     bgClass: 'bg-pink-50',
     textClass: 'text-slate-800',
   },
   {
-    title: 'Encara no...',
-    text: "Que als 32 anys ja cal fer una mica d'exercici de dits! 😅",
+    title: 'Hem viscut moltes experiències junts ❤️ ❤️',
+    text: 'I encara ens en queden moltes! 😜',
     bgClass: 'bg-pink-100',
     textClass: 'text-slate-800',
   },
   {
-    title: 'Recordes els teus 30?',
-    text: "L'estrès de les Opos, el sopar a l'Umai... quantes coses hem viscut!",
-    bgClass: 'bg-rose-800',
-    textClass: 'text-white',
-  },
-  {
-    title: 'Doncs per aquests 32...',
-    text: 'He preparat una cosa diferent. ❤️',
-    bgClass: 'bg-pink-50',
-    textClass: 'text-slate-800',
-  },
-  {
-    title: 'Molt a prop...',
-    text: 'Només una mica més de scroll...',
-    bgClass: 'bg-rose-900',
-    textClass: 'text-white',
-  },
-  {
-    title: 'Ara sí!',
-    text: 'Aquí tens la teva sorpresa...',
-    bgClass: 'bg-pink-100',
-    textClass: 'text-slate-800',
-  },
-  {
-    title: '🎟️ VAL PER...',
-    text: "[AQUÍ POSAREM EL TEU REGAL REAL: Una escapada a la muntanya / Un dia d'Spa / Unes entrades per un concert...]",
+    title: '🎟️ I el regal és...',
+    text: 'Pack de coses que no pots fer mentres estàs embarassada',
     bgClass: 'bg-yellow-200',
     textClass: 'text-slate-900',
+  },
+  {
+    title: 'Tornar a menjar sushi com déu mana',
+    text: 'Al nostre restaurant preferit',
+    bgClass: 'bg-pink-100',
+    textClass: 'text-slate-800',
+    images: [umai],
+  },
+  {
+    title: 'Tornar a menjar carn poc feta',
+    text: 'Aquest restaurant potser és més preferit per mi, però tu també disfrutes jeje Nah si vols podem provar un altre',
+    bgClass: 'bg-rose-800',
+    textClass: 'text-white',
+    images: [catalina],
+  },
+  {
+    title: 'Tornar a relaxar-te en un bon SPA amb aigua calenteta',
+    text: 'Al que vulguis anar, Aqua Gerunda, Magma, Caldea o en provem un de nou',
+    bgClass: 'bg-pink-100',
+    textClass: 'text-slate-800',
+  },
+  {
+    title: 'A disfrutar!',
+    text: "❤️ T'estimo molt ❤️",
+    bgClass: 'bg-pink-100',
+    textClass: 'text-slate-800',
+    images: [umai, catalina],
   },
 ]
 ---
@@ -75,6 +87,7 @@ const scenes: SceneInterface[] = [
         text={scene.text}
         bgClass={scene.bgClass}
         textClass={scene.textClass}
+        images={scene.images}
       />
     ))
   }
