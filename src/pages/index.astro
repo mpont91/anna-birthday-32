@@ -7,8 +7,57 @@ import menorca1 from '../assets/menorca1.jpg'
 import menorca2 from '../assets/menorca2.jpg'
 import menorca3 from '../assets/menorca3.jpg'
 import menorca4 from '../assets/menorca4.jpg'
-import umai from '../assets/umai.jpg'
-import catalina from '../assets/catalina.jpg'
+import menorca5 from '../assets/menorca5.jpg'
+import menorca6 from '../assets/menorca6.jpg'
+import ibiza1 from '../assets/ibiza1.jpg'
+import ibiza2 from '../assets/ibiza2.jpg'
+import ibiza3 from '../assets/ibiza3.jpg'
+import ibiza4 from '../assets/ibiza4.jpg'
+import ibiza5 from '../assets/ibiza5.jpg'
+import ibiza6 from '../assets/ibiza6.jpg'
+import croacia1 from '../assets/croacia1.jpg'
+import croacia2 from '../assets/croacia2.jpg'
+import croacia3 from '../assets/croacia3.jpg'
+import croacia4 from '../assets/croacia4.jpg'
+import croacia5 from '../assets/croacia5.jpg'
+import croacia6 from '../assets/croacia6.jpg'
+import budapest1 from '../assets/budapest1.jpg'
+import budapest2 from '../assets/budapest2.jpg'
+import budapest3 from '../assets/budapest3.jpg'
+import budapest4 from '../assets/budapest4.jpg'
+import budapest5 from '../assets/budapest5.jpg'
+import budapest6 from '../assets/budapest6.jpg'
+import cuba1 from '../assets/cuba1.jpg'
+import cuba2 from '../assets/cuba2.jpg'
+import cuba3 from '../assets/cuba3.jpg'
+import cuba4 from '../assets/cuba4.jpg'
+import cuba5 from '../assets/cuba5.jpg'
+import cuba6 from '../assets/cuba6.jpg'
+import cuba7 from '../assets/cuba7.jpg'
+import cuba8 from '../assets/cuba8.jpg'
+import japo1 from '../assets/japo1.jpg'
+import japo2 from '../assets/japo2.jpg'
+import japo3 from '../assets/japo3.jpg'
+import japo4 from '../assets/japo4.jpg'
+import japo5 from '../assets/japo5.jpg'
+import japo6 from '../assets/japo6.jpg'
+import japo7 from '../assets/japo7.jpg'
+import japo8 from '../assets/japo8.jpg'
+import eeuu1 from '../assets/eeuu1.jpg'
+import eeuu2 from '../assets/eeuu2.jpg'
+import eeuu3 from '../assets/eeuu3.jpg'
+import eeuu4 from '../assets/eeuu4.jpg'
+import eeuu5 from '../assets/eeuu5.jpg'
+import eeuu6 from '../assets/eeuu6.jpg'
+import eeuu7 from '../assets/eeuu7.jpg'
+import eeuu8 from '../assets/eeuu8.jpg'
+import wedding1 from '../assets/wedding1.jpg'
+import wedding2 from '../assets/wedding2.jpg'
+import wedding3 from '../assets/wedding3.jpg'
+import wedding4 from '../assets/wedding4.jpg'
+import sushi from '../assets/sushi.jpg'
+import beef from '../assets/beef.jpg'
+import spa from '../assets/spa.jpg'
 
 interface SceneInterface {
   title: string
@@ -27,54 +76,135 @@ const scenes: SceneInterface[] = [
   },
   {
     title: "Encara me'n recordo del primer viatge que vam fer a Menorca...",
+    text: "Seria l'inici d'una tradició de viatjar.",
     bgClass: 'bg-rose-900',
     textClass: 'text-white',
-    images: [menorca1, menorca2, menorca3, menorca4],
+    images: [menorca1, menorca2, menorca3, menorca4, menorca5, menorca6],
   },
   {
-    title: "Ja fa han passat 10 anys d'aquell viatge!",
-    text: '😲 😲 😲 😲',
+    title: "Ja han passat 10 anys d'aquell viatge...",
+    text: '😲 😲',
+    bgClass: 'bg-rose-100',
+    textClass: 'text-rose-900',
+  },
+  {
+    title: 'Després vam saltar a Eivissa...',
+    text: 'Platgeta, sol i desconnexió. 🏖️',
+    bgClass: 'bg-stone-100',
+    textClass: 'text-slate-800',
+    images: [ibiza1, ibiza2, ibiza3, ibiza4, ibiza5, ibiza6],
+  },
+  {
+    title: 'Vam descobrir Croàcia...',
+    text: '',
+    bgClass: 'bg-pink-50',
+    textClass: 'text-slate-800',
+    images: [croacia1, croacia2, croacia3, croacia4, croacia5, croacia6],
+  },
+  {
+    title: 'Budapest...',
+    text: '',
+    bgClass: 'bg-rose-50',
+    textClass: 'text-slate-800',
+    images: [budapest1, budapest2, budapest3, budapest4, budapest5, budapest6],
+  },
+  {
+    title: 'El Covid ens va frenar una miqueta...',
+    text: '🦠 🦠',
+    bgClass: 'bg-slate-800',
+    textClass: 'text-slate-200',
+  },
+  {
+    title: 'Per després casar-nos...',
+    text: '',
+    bgClass: 'bg-rose-900',
+    textClass: 'text-white',
+    images: [wedding1, wedding2, wedding3, wedding4],
+  },
+  {
+    title: 'I fer el nostre primer gran viatge a Cuba!',
+    text: '',
+    bgClass: 'bg-teal-50',
+    textClass: 'text-teal-900',
+    images: [cuba1, cuba2, cuba3, cuba4, cuba5, cuba6, cuba7, cuba8],
+  },
+  {
+    title: 'Vam seguir pel Japó...',
+    text: 'Sushi del bo i temples. 🍣⛩️',
+    bgClass: 'bg-stone-100',
+    textClass: 'text-slate-800',
+    images: [japo1, japo2, japo3, japo4, japo5, japo6, japo7, japo8],
+  },
+  {
+    title: 'I vam rematar pels Estats Units!',
+    text: '',
+    bgClass: 'bg-pink-50',
+    textClass: 'text-slate-800',
+    images: [eeuu1, eeuu2, eeuu3, eeuu4, eeuu5, eeuu6, eeuu7, eeuu8],
+  },
+  {
+    title: 'Una dècada viatjant al teu costat...',
+    text: 'Hem viscut moltes experiències junts ❤️',
+    bgClass: 'bg-rose-100',
+    textClass: 'text-rose-900',
+  },
+  {
+    title: 'I ara ens preparem pel viatge més gran de tots...',
+    text: 'Començar a formar la nostra família. 👶',
     bgClass: 'bg-pink-50',
     textClass: 'text-slate-800',
   },
   {
-    title: 'Hem viscut moltes experiències junts ❤️ ❤️',
-    text: 'I encara ens en queden moltes! 😜',
-    bgClass: 'bg-pink-100',
-    textClass: 'text-slate-800',
-  },
-  {
-    title: '🎟️ I el regal és...',
-    text: 'Pack de coses que no pots fer mentres estàs embarassada',
-    bgClass: 'bg-yellow-200',
-    textClass: 'text-slate-900',
-  },
-  {
-    title: 'Tornar a menjar sushi com déu mana',
-    text: 'Al nostre restaurant preferit',
-    bgClass: 'bg-pink-100',
-    textClass: 'text-slate-800',
-    images: [umai],
-  },
-  {
-    title: 'Tornar a menjar carn poc feta',
-    text: 'Aquest restaurant potser és més preferit per mi, però tu també disfrutes jeje Nah si vols podem provar un altre',
-    bgClass: 'bg-rose-800',
+    title: 'Així que segurament et preguntaràs... quin és el meu regal, no?',
+    text: 'Amb en Martí no en tens suficient? 😜',
+    bgClass: 'bg-rose-900',
     textClass: 'text-white',
-    images: [catalina],
   },
   {
-    title: 'Tornar a relaxar-te en un bon SPA amb aigua calenteta',
-    text: 'Al que vulguis anar, Aqua Gerunda, Magma, Caldea o en provem un de nou',
+    title: 'És broma!',
+    text: 'Et mereixes un regal pensat només per a tu.',
     bgClass: 'bg-pink-100',
     textClass: 'text-slate-800',
   },
   {
-    title: 'A disfrutar!',
-    text: "❤️ T'estimo molt ❤️",
-    bgClass: 'bg-pink-100',
+    title: 'He estat pensant què et faria més il·lusió ara mateix...',
+    text: 'I crec que ho tinc clar.',
+    bgClass: 'bg-stone-100',
     textClass: 'text-slate-800',
-    images: [umai, catalina],
+  },
+  {
+    title: '🎟️ EL TEU REGAL ÉS...',
+    text: 'Un "Pack VIP" de tot allò que has hagut de sacrificar durant l\'embaràs!',
+    bgClass: 'bg-amber-200',
+    textClass: 'text-amber-900',
+  },
+  {
+    title: '1. Tornar a menjar sushi com déu mana',
+    text: "Crec que ha de ser l'Umai no?",
+    bgClass: 'bg-pink-50',
+    textClass: 'text-slate-800',
+    images: [sushi],
+  },
+  {
+    title: '2. Tornar a disfrutar de la carn poca feta',
+    text: 'Catalina? (🤤, però si vols en provem un altre!).',
+    bgClass: 'bg-rose-900',
+    textClass: 'text-white',
+    images: [beef],
+  },
+  {
+    title: "3. Relaxar-te en un bon SPA amb l'aigua ben calentona",
+    text: 'Aqua Gerunda, Magma, Caldea... on tu vulguis i quan vulguis.',
+    bgClass: 'bg-blue-50',
+    textClass: 'text-blue-900',
+    images: [spa],
+  },
+  {
+    title: "A gaudir, que t'ho mereixes tot i més!",
+    text: "❤️ T'estimo moltíssim ❤️",
+    bgClass: 'bg-pink-100',
+    textClass: 'text-rose-900',
+    images: [sushi, beef, spa],
   },
 ]
 ---

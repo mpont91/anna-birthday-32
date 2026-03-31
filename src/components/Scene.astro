@@ -16,16 +16,30 @@ const hasImages = images && images.length > 0
 
     {
       hasImages && (
-        <div class="flex flex-wrap justify-center gap-4 mt-8">
-          {images.map((img: any) => (
-            <Image
-              src={img}
-              alt="Record"
-              width={400}
-              class="rounded-xl shadow-lg object-cover w-48 h-48 md:w-64 md:h-64"
-            />
-          ))}
-        </div>
+        <>
+          {images.length === 1 && (
+            <div class="mt-8 max-w-4xl w-full flex justify-center">
+              <Image
+                src={images[0]}
+                alt="Regal"
+                width={1000}
+                class="rounded-3xl shadow-2xl object-cover w-full aspect-video md:aspect-21/9"
+              />
+            </div>
+          )}
+          {images.length > 1 && (
+            <div class="flex flex-wrap justify-center gap-4 mt-8">
+              {images.map((img: any) => (
+                <Image
+                  src={img}
+                  alt="Record"
+                  width={400}
+                  class="rounded-xl shadow-lg object-cover w-48 h-48 md:w-64 md:h-64"
+                />
+              ))}
+            </div>
+          )}
+        </>
       )
     }
   </div>
