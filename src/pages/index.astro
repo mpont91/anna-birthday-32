@@ -51,6 +51,12 @@ import eeuu5 from '../assets/eeuu5.jpg'
 import eeuu6 from '../assets/eeuu6.jpg'
 import eeuu7 from '../assets/eeuu7.jpg'
 import eeuu8 from '../assets/eeuu8.jpg'
+import extra1 from '../assets/extra1.jpg'
+import extra2 from '../assets/extra2.jpg'
+import extra3 from '../assets/extra3.jpg'
+import extra4 from '../assets/extra4.jpg'
+import extra5 from '../assets/extra5.jpg'
+import extra6 from '../assets/extra6.jpg'
 import wedding1 from '../assets/wedding1.jpg'
 import wedding2 from '../assets/wedding2.jpg'
 import wedding3 from '../assets/wedding3.jpg'
@@ -70,47 +76,47 @@ interface SceneInterface {
 const scenes: SceneInterface[] = [
   {
     title: 'Per molts anys, Anna! 🎂',
-    text: '32 anys ja... com passa el temps!',
+    text: '32 anys ja... com passa el temps! ✨',
     bgClass: 'bg-pink-50',
-    textClass: 'text-slate-800',
+    textClass: 'text-pink-900',
   },
   {
-    title: "Encara me'n recordo del primer viatge que vam fer a Menorca...",
-    text: "Seria l'inici d'una tradició de viatjar.",
+    title: "Encara me'n recordo del primer viatge que vam fer a Menorca... 🌊",
+    text: "Seria l'inici d'una gran tradició de viatjar.",
     bgClass: 'bg-rose-900',
     textClass: 'text-white',
     images: [menorca1, menorca2, menorca3, menorca4, menorca5, menorca6],
   },
   {
     title: "Ja han passat 10 anys d'aquell viatge...",
-    text: '😲 😲',
-    bgClass: 'bg-rose-100',
-    textClass: 'text-rose-900',
+    text: '😲 Sembla mentida... ⏳',
+    bgClass: 'bg-orange-50',
+    textClass: 'text-orange-900',
   },
   {
     title: 'Després vam saltar a Eivissa...',
-    text: 'Platgeta, sol i desconnexió. 🏖️',
-    bgClass: 'bg-stone-100',
-    textClass: 'text-slate-800',
+    text: 'Platgeta, sol i desconnexió. 🏖️🍹',
+    bgClass: 'bg-amber-50',
+    textClass: 'text-amber-900',
     images: [ibiza1, ibiza2, ibiza3, ibiza4, ibiza5, ibiza6],
   },
   {
     title: 'Vam descobrir Croàcia...',
     text: '',
-    bgClass: 'bg-pink-50',
-    textClass: 'text-slate-800',
+    bgClass: 'bg-cyan-50',
+    textClass: 'text-cyan-900',
     images: [croacia1, croacia2, croacia3, croacia4, croacia5, croacia6],
   },
   {
     title: 'Budapest...',
     text: '',
-    bgClass: 'bg-rose-50',
-    textClass: 'text-slate-800',
+    bgClass: 'bg-indigo-50',
+    textClass: 'text-indigo-900',
     images: [budapest1, budapest2, budapest3, budapest4, budapest5, budapest6],
   },
   {
     title: 'El Covid ens va frenar una miqueta...',
-    text: '🦠 🦠',
+    text: '🦠 😷',
     bgClass: 'bg-slate-800',
     textClass: 'text-slate-200',
   },
@@ -124,79 +130,91 @@ const scenes: SceneInterface[] = [
   {
     title: 'I fer el nostre primer gran viatge a Cuba!',
     text: '',
-    bgClass: 'bg-teal-50',
-    textClass: 'text-teal-900',
+    bgClass: 'bg-emerald-50',
+    textClass: 'text-emerald-900',
     images: [cuba1, cuba2, cuba3, cuba4, cuba5, cuba6, cuba7, cuba8],
   },
   {
     title: 'Vam seguir pel Japó...',
     text: 'Sushi del bo i temples. 🍣⛩️',
     bgClass: 'bg-stone-100',
-    textClass: 'text-slate-800',
+    textClass: 'text-stone-900',
     images: [japo1, japo2, japo3, japo4, japo5, japo6, japo7, japo8],
   },
   {
     title: 'I vam rematar pels Estats Units!',
     text: '',
-    bgClass: 'bg-pink-50',
-    textClass: 'text-slate-800',
+    bgClass: 'bg-sky-50',
+    textClass: 'text-sky-900',
     images: [eeuu1, eeuu2, eeuu3, eeuu4, eeuu5, eeuu6, eeuu7, eeuu8],
   },
   {
+    title: 'I encara vam tenir alguns viatgets pel mig...',
+    text: 'Madrid, País Vasc, Itàlia...',
+    bgClass: 'bg-violet-50',
+    textClass: 'text-violet-900',
+    images: [extra1, extra2, extra3, extra4, extra5, extra6],
+  },
+  {
     title: 'Una dècada viatjant al teu costat...',
-    text: 'Hem viscut moltes experiències junts ❤️',
+    text: 'Hem viscut moltes experiències junts ❤️✨',
     bgClass: 'bg-rose-100',
     textClass: 'text-rose-900',
   },
   {
     title: 'I ara ens preparem pel viatge més gran de tots...',
-    text: 'Començar a formar la nostra família. 👶',
-    bgClass: 'bg-pink-50',
-    textClass: 'text-slate-800',
+    text: 'Començar a formar la nostra família. 👶🍼',
+    bgClass: 'bg-teal-50',
+    textClass: 'text-teal-900',
   },
   {
-    title: 'Així que segurament et preguntaràs... quin és el meu regal, no?',
+    title: 'Així que segurament et preguntaràs... quin és el meu regal, no? 🤔',
     text: 'Amb en Martí no en tens suficient? 😜',
-    bgClass: 'bg-rose-900',
+    bgClass: 'bg-slate-900',
     textClass: 'text-white',
   },
   {
-    title: 'És broma!',
+    title: 'És broma! 🎁',
     text: 'Et mereixes un regal pensat només per a tu.',
     bgClass: 'bg-pink-100',
-    textClass: 'text-slate-800',
+    textClass: 'text-pink-900',
   },
   {
-    title: 'He estat pensant què et faria més il·lusió ara mateix...',
-    text: 'I crec que ho tinc clar.',
+    title: 'He estat pensant en els sacrificis que estàs fent...',
+    text: 'I he arribat a la conclusió... 💡',
     bgClass: 'bg-stone-100',
-    textClass: 'text-slate-800',
+    textClass: 'text-stone-800',
   },
   {
-    title: '🎟️ EL TEU REGAL ÉS...',
-    text: 'Un "Pack VIP" de tot allò que has hagut de sacrificar durant l\'embaràs!',
-    bgClass: 'bg-amber-200',
+    title: 'Que el teu regal tenia que ser... 🤫',
+    bgClass: 'bg-stone-200',
+    textClass: 'text-stone-900',
+  },
+  {
+    title: '🎟️ Un "Pack VIP" 👑',
+    text: "De tot allò que has hagut de sacrificar durant l'embaràs!",
+    bgClass: 'bg-amber-300',
     textClass: 'text-amber-900',
   },
   {
     title: '1. Tornar a menjar sushi com déu mana',
     text: "Crec que ha de ser l'Umai no?",
-    bgClass: 'bg-pink-50',
-    textClass: 'text-slate-800',
+    bgClass: 'bg-rose-50',
+    textClass: 'text-rose-900',
     images: [sushi],
   },
   {
     title: '2. Tornar a disfrutar de la carn poca feta',
     text: 'Catalina? (🤤, però si vols en provem un altre!).',
-    bgClass: 'bg-rose-900',
+    bgClass: 'bg-red-900',
     textClass: 'text-white',
     images: [beef],
   },
   {
     title: "3. Relaxar-te en un bon SPA amb l'aigua ben calentona",
     text: 'Aqua Gerunda, Magma, Caldea... on tu vulguis i quan vulguis.',
-    bgClass: 'bg-blue-50',
-    textClass: 'text-blue-900',
+    bgClass: 'bg-cyan-100',
+    textClass: 'text-cyan-900',
     images: [spa],
   },
   {
